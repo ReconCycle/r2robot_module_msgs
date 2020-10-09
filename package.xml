@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>r2robot_module_msgs</name>
+  <version>1.0.0</version>
+  <description>The robot_module_msgs package for ROS2</description>
+
+  <maintainer email="timotej.gaspar@ijs.si">Timotej Gaspar</maintainer>
+
+  <license>TODO</license>
+
+  <!-- change the buildtool from catkin to ament_cmake -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <!-- <buildtool_depend>catkin</buildtool_depend> -->
+
+  <!-- use rosidl_default_generators instead of message_generation -->
+  <!-- this time, it's a buildtool instead of a dependency -->
+  <buildtool_depend>rosidl_default_generators</buildtool_depend>
+  <!-- <build_depend>message_generation</build_depend> -->
+  
+  
+  <!-- use builtin_interfaces instead of std_msgs -->
+  <build_depend>builtin_interfaces</build_depend>
+  <!-- <build_depend>std_msgs</build_depend> -->
+
+
+  <!-- <build_depend>actionlib_msgs</build_depend> -->
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  
+  <exec_depend>builtin_interfaces</exec_depend>
+  <!-- <run_depend>std_msgs</run_depend> -->
+  <!-- <run_depend>actionlib_msgs</run_depend> -->
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  
+  <!-- use rosidl_default_runtime instead of message_runtime -->
+  <exec_depend>rosidl_default_runtime</exec_depend>
+  <!-- <run_depend>message_runtime</run_depend> -->
+  
+  <!-- add to the rosidl_interface_packages group-->
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+    <!-- add custom mapping rules if any variable names changed -->
+    <ros1_bridge mapping_rules="rosbridge_mapping_rules.yaml"/>
+  </export>
+</package>

@@ -1,0 +1,7 @@
+string tool_name # A string specifying the name of the tool
+float64[] tool_position # The positional offset of the tool
+float64[] tool_rotation # The rotational offset of the tool in quaternion
+float64 weight # the weight of the tool in kg
+---
+bool success # indicate successful run of triggered service
+string message # informational, e.g. for error messages
