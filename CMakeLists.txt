@@ -121,9 +121,8 @@ ament_export_dependencies(rosidl_default_runtime)
 # Instead of catkin_package
 ament_package()
 
-# WIP 
-# # Install the mapping rules for parameter name matches within the message.
-# install(
-#   FILES rosbridge_mapping_rules.yaml
-#   DESTINATION share/${PROJECT_NAME}
-# )
+# Install the mapping rules for parameter name matches within the message.
+install(
+  FILES rosbridge_mapping_rules.yaml
+  DESTINATION share/${PROJECT_NAME}
+)
