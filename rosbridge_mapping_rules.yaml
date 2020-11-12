@@ -1,11 +1,20 @@
-- ros1_package_name: "robot_module_msgs"
-  ros1_message_name: "ServoCtrlMsg"
-  ros2_package_name: "r2robot_module_msgs"
-  ros2_message_name: "ServoCtrlMsg"
-  fields_1_to_2:
-    angle: "angle"
-    throttle: "throttle"
-- ros1_package_name: "robot_module_msgs"
+-
+  ros1_package_name: 'robot_module_msgs'
+  ros1_message_name: 'Float64Array'
+  ros2_package_name: 'r2robot_module_msgs'
+  ros2_message_name: 'Float64Array'
+-
+  ros1_package_name: 'robot_module_msgs'
+  ros1_message_name: 'Float32Array'
+  ros2_package_name: 'r2robot_module_msgs'
+  ros2_message_name: 'Float32Array'
+-
+  ros1_package_name: 'robot_module_msgs'
+  ros1_message_name: 'JointSpaceDMP'
+  ros2_package_name: 'r2robot_module_msgs'
+  ros2_message_name: 'JointSpaceDMP'
+-
+  ros1_package_name: "robot_module_msgs"
   ros1_service_name: "SetRobotTool"
   ros2_package_name: "r2robot_module_msgs"
   ros2_service_name: "SetRobotTool"
@@ -13,7 +22,8 @@
     toolName: "tool_name"
     tool_position: "tool_position"
     toolRotation: "toolRotation"
-- ros1_package_name: "robot_module_msgs"
+-
+  ros1_package_name: "robot_module_msgs"
   ros1_service_name: "Output"
   ros2_package_name: "r2robot_module_msgs"
   ros2_service_name: "Output"
